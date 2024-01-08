@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EEFDF8;
+    margin: 20px 88px;
+    padding: 14px 16px;
+}
+
+.logo img{
+    width: 127px;
+    height: 30px;
+}
+
+.header-menu ul{
+    display: flex;
+    list-style-type: none;
+    /* margin: 16px; */
+    padding: 15px;
+}
+
+.header-menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 16px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.header-button a{
+    text-decoration: none;
+    margin: 0 10px;
+
+
+}
+
+.header-button #login{
+    color: black;
+    font-weight: 800;
+
+}
+
+.header-button #signup{
+    color: #fff;
+    background-color: #12A833;
+    padding: 18px 25px;
+
+}
+
+.hero-section{
+    background-color: #F1F3F6;
+}
+
+.hero-section-container{
+    margin: 0 298px;
+    padding: 96px 12px 100px;
+}
+
+.hero-section .hero-section-container h2{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roobert';
+    text-align: center  ;
+}
+
+.hero-section .hero-section-container h3{
+    margin: 20px 0 0;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Roobert';
+    text-align: center;
+}
+
+
+.section-two-container{
+    margin: 50px 88px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 100px;
+}
+
+
+.section-two-left p{
+    font-size: 20px;
+    margin: 0 0 16px;
+}
+.section-two-container .section-two-left div{
+    margin: 100px 0 0;
+}
+
+.section-two-container .section-two-left div a{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-two-right img{
+    width: 624px;
+}
+
+.career-opening-container {
+    display: flex;
+    margin: 0 88px;
+}
+
+.career-opening-items{
+    margin: 0 16px 0 0;
+    /* width: %; */
+}
+
+.career-opening-items h6{
+    margin: 0 0 8px;
+    font: 16px;
+    color: blue;
+}
+
+.career-opening-items h2{
+    margin: 0 0 16px;
+    font: 48px;
+    font-weight: bold;
+}
+
+.career-opening-items p{
+    font-size: 16px;
+}
+
+.career-opening-items .career-opening-button button{
+    margin: 0 12px 12px 0;
+    padding: 12px 16px;
+    background-color: #Efefef;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.career-opening-items .career-opening-button button:nth-child(1){
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+}
+
+.career-opening-items a{
+    text-decoration: none;
+    color: #000;
+}
+.career-opening-items #jobs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 28px;
+    padding: 32px 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+} 
+
+.career-opening-items #jobs #details{
+    font-size: 14px;
+}
+
+.career-opening-items #jobs #growth{
+    font-size: 14px;
+    color: #12A833;
+}
+
+.why-work-container{
+    margin: 0 88px;
+}
+
+.why-work-container h2{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 16px;
+
+}
+
+.why-work-container #why-work-text{
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 40px;
+
+}
+
+.why-work-items-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.why-work-items{
+    margin: 0 0 40px;
+    padding: 0 0 12px;
+    width: 33%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.join-card{
+    margin: 50px 88px;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+}
+
+.join-card .card{
+    padding: 80px 0;
+
+    background-image: url(../images/background.png);
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.join-card .card h2{
+    font-size: 41px;
+    color: #fff;
+}
+
+.join-card .card p{
+    color: #fff;
+    font-size: 19px;
+    margin: 16px 0 0;
+}
+
+.join-card .card .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 48px 0 0;
+}
+
+
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.container{
+    margin: -200px 0 0;
+    padding: 300px 0 0;
+}
+
+.footer .container #links ul li a{
+    color: #fff;
+}
+
+.footer .container #links ul li a:hover{
+    color: #12A833;
+}
+
+#button{
+    background-color: #18CC3F;
+}
