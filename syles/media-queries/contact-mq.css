@@ -1,0 +1,289 @@
+/* Smaller Mobile screens of 600px and below  */
+
+@media only screen and (max-width: 992px){
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #EEFDF8;
+        margin: 20px 88px;
+        padding: 14px 16px;
+    }
+    
+    .logo img{
+        width: 127px;
+        height: 30px;
+    }
+    
+    .header-menu ul{
+        display: none;
+        list-style-type: none;
+        /* margin: 16px; */
+        padding: 15px;
+    }
+    
+    .header-menu ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        margin: 0 16px;
+        font-weight: 600;
+        color: black;
+    }
+    
+    
+    .header-button a{
+        text-decoration: none;
+        margin: 0 10px;
+    
+    
+    }
+    
+    .header-button #login{
+        color: black;
+        font-weight: 800;
+    
+    }
+    
+    .header-button #signup{
+        color: #fff;
+        background-color: #12A833;
+        padding: 18px 25px;
+    
+    }
+    
+    .hero-section{
+        /* width: 100%; */
+        background-color: #F1F3F6;
+    }
+    
+    .hero-section-container{
+        margin: 0 50px;
+        padding: 96px 12px 100px;
+    }
+    
+    .hero-section .hero-section-container h2{
+        font-size: 40px;
+        font-weight: 400;
+        font-family: 'Roobert';
+        text-align: center  ;
+    }
+    
+    .hero-section .hero-section-container p{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .contact-image-row{
+        margin: 50px 200px 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .contact-text-row{
+        margin: 50px 100px 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    .contact-text-row div{
+        text-align: center;
+    }
+    .contact-text-row h2{
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0 0 16px;
+    }
+    
+    .contact-text-row p{
+        text-align: center;
+        font-size: 16px;
+        margin: 0 0 16px;
+        text-decoration: none;
+    }
+    
+    .contact-text-row a{
+        text-decoration: none;
+    }
+    
+    .map{
+        margin: 0 28px;
+    }
+    
+    .contact-form{
+        margin: 70px 28px ;
+    }
+    .contact-form form div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-left: -10px;
+    }
+    .contact-form form #yourname {
+        width: 50%;
+        padding: 16px 12px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        margin: 6px 0 16px;
+        resize: vertical;
+      }
+      .contact-form form #email {
+        width: 50%;
+        padding: 16px 12px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        margin: 6px 0 16px;
+        resize: vertical;
+      }
+      
+      .contact-form form #subject {
+        width: 100%;
+        padding:16px 12px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        margin: 6px 0 16px;
+        resize: vertical;
+      }
+    
+      .contact-form form #message {
+        width: 100%;
+        padding: 16px 12px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        margin: 6px 0 16px;
+        resize: vertical;
+      }
+      .contact-form  input[type=submit] {
+        background-color: #18CC3F;
+        font-size: 16px;
+        color: white;
+        padding: 16px 70px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    
+    .join-card{
+        margin: 50px 22px ;
+        width: 90%;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .join-card .card{
+        padding: 80px 0;
+    
+        background-image: url(./background.png);
+        background-size: contain;
+        border-radius: 20px;
+    }
+    
+    .join-card .card h2{
+        font-size: 41px;
+        color: #fff;
+    }
+    
+    .join-card .card p{
+        color: #fff;
+        font-size: 19px;
+        margin: 16px 0 0;
+    }
+    
+    .join-card .card .social-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin: 48px 0 0;
+    }
+    
+    
+    .footer{
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+    }
+
+    
+    #news{
+        margin-left: -20px;
+        /* gap: 40px; */
+    }
+
+    /* #legal{
+        margin-left: 30px;
+    } */
+    
+    .container{
+        margin: -200px 0 0;
+        padding: 300px 0 0;
+    }
+    
+    .footer .container #links ul li a{
+        color: #fff;
+    }
+    
+    .footer .container #links ul li a:hover{
+        color: #12A833;
+    }
+    
+    #button{
+        background-color: #18CC3F;
+    }
+    
+}
+
+/* Smaller Mobile screens of 600px and below  */
+
+@media only screen and (max-width: 768px){
+    
+}
+
+/* Smaller Mobile screens of 600px and below  */
+
+@media only screen and (max-width: 600px){
+    .contact-image-row{
+        margin: 50px 100px 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .contact-text-row{
+        margin: 50px 0 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    .contact-text-row div{
+        text-align: center;
+    }
+    .contact-text-row h2{
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 16px;
+    }
+    
+    .contact-text-row p{
+        text-align: center;
+        font-size: 16px;
+        margin: 0 0 16px;
+        text-decoration: none;
+    }
+    
+    .contact-text-row a{
+        text-decoration: none;
+    }
+}
