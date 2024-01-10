@@ -1,0 +1,216 @@
+@media only screen and (max-width: 992px) {
+    header{
+    
+        background-color: #FFFBF2;
+        padding: 22px;
+    }
+    
+    .header-container{
+        margin: 0 29px;
+        /* padding: 22px 12px 0px; */
+        
+    }
+    .nav{
+        
+        padding: 22px 12px ;
+       display: flex; 
+       align-items: center;
+       justify-content: space-between;
+       background-color: #fff;
+       border-radius: 20px;
+       box-shadow: 0 3px 5px 0 rgba(63, 63, 63, 0.3), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .nav .logo{
+        margin-left: 30px;
+    }
+    
+    .header-container .logo img{
+        width: 127px;
+    }
+    
+    .nav .links{
+        margin-right: 30px;
+        
+    }
+    
+    .nav .links a{
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+    
+    .hero{
+        background-color: #FFFBF2;
+        padding: 64px 0;
+    }
+    
+    .hero-container{
+        margin: 0 29px;
+        text-align: center;
+    }
+    
+    .hero-text{
+        margin: 0 29px;
+        
+    }
+    
+    .hero-text a{
+        text-decoration: none;
+        font: 16px;
+        font-weight: bold;
+        padding: 10px 30px;
+        margin: 0 0 100px 0;
+        background-image: linear-gradient( 270deg, #E8E5F2, #F8DACF);
+        border-radius: 30px;
+        color: #000;
+    }
+    
+    .hero-text h2{
+        margin: 50px 0 0;
+        font-size: 67px;
+        font-weight: bold;
+    }
+    
+    .hero-text p{
+        font-size: 24px;
+    }
+    
+    .app-button img{
+        margin: 50px 15px;
+        width: 180px;
+        border-radius: 50px;
+    }
+    
+    .hero-image{
+        text-align: center;
+        margin: 0 0 64px;
+        
+    }
+    
+    .hero-image img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .marque{
+        background-color: green;
+        padding: 40px 20px 180px;
+        border-radius: 60px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .marque-text{
+        margin-top: -150px ;
+        background-color: #FFF7E6;
+        padding: 50px 100px 114px ;
+        border-radius: 60px 60px 0 0;
+        
+    }
+    
+    .marque-text h2{
+        font-size: 53px;
+        font-weight: bold;
+        color: #888682;
+    }
+    
+    .marque-text #green{
+        font-size: 53px;
+        font-weight: bold;
+        color: #0E8847;
+    }
+    
+    .marque-text #black{
+        font-size: 53px;
+        font-weight: bold;
+        color: #000 ;
+    }
+    
+    .faq{
+        padding: 64px 29px ;
+        background-color:  #FFFBF2;
+    }
+    
+    .faq h2{
+        font-size: 52px ;
+        margin: 0 0 16px;
+    }
+    
+    .accordion-item{
+        margin: 25px 0;
+    }
+    .faq .accordion-button{
+        background-color: #fff;
+    }
+    
+    .faq .accordion-header button{
+        background-color: #B3F7C2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav .links{
+        display: none;
+    }
+
+    .hero-text a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px 15px;
+        margin: 0 0 100px 0;
+        background-image: linear-gradient( 270deg, #E8E5F2, #F8DACF);
+        border-radius: 30px;
+        color: #000;
+    }
+
+    .hero-text h2{
+        margin: 50px 0 0;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .hero-text p{
+        font-size: 14px;
+    }
+    .app-button img{
+        margin: 8px 0 12px 20px;
+        width: 144px;
+        border-radius: 50px;
+        
+    }
+    .marque-text{
+        margin-top: -150px ;
+        background-color: #FFF7E6;
+        padding: 50px 24px 114px ;
+        border-radius: 60px 60px 0 0;
+        
+    }
+    
+    .marque-text h2{
+        font-size: 36px;
+        font-weight: bold;
+        color: #888682;
+    }
+    
+    .marque-text #green{
+        font-size: 36px;
+        font-weight: bold;
+        color: #0E8847;
+    }
+    
+    .marque-text #black{
+        font-size: 36px;
+        font-weight: bold;
+        color: #000 ;
+    }
+
+    .faq h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+} 
