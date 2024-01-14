@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: #EEFDF8;
-        margin: 20px 88px 10px;
+        margin: 20px 29px 10px;
         padding: 14px 16px;
     }
     
@@ -36,9 +36,12 @@
     
     .header-button a{
         text-decoration: none;
-        margin: 0 10px;
+        margin: 0 5px;
     
-    
+    }
+
+    .header-button #hamburger{
+        display: none;
     }
     
     .header-button #login{
@@ -629,9 +632,15 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 768px) {
-    .header-menu{
+    nav{
         display: none;
     }
+
+    .header-button #login{
+        display: none;
+    }
+
+   
 
     .hero-container{
 
@@ -1232,7 +1241,7 @@
             align-items: center;
             justify-content: space-between;
             background-color: #EEFDF8;
-            margin: 20px 88px 10px;
+            margin: 20px 28px 10px;
             padding: 14px 16px;
         }
         
@@ -1263,6 +1272,141 @@
         
         
         }
+
+        .header #hamburger{
+            display: block;
+            margin-left: 250px;
+            
+        }
+
+        #ham:checked ~ nav{
+            display: block;
+        }
+
+        .header #ham{
+            visibility: hidden;
+        }
+
+        
+        nav {
+            /* display: block; */
+            margin-left: 1rem;
+            z-index: 1;
+            position: absolute;
+            top: 100;
+            right: 100;
+            background-color: #EEFDF8;
+          }
+          
+          .main-menu {
+            
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .main-menu li {
+            position: relative;
+          }
+          
+          .main-menu li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+          }
+          
+          .main-menu li:hover .sub-menu {
+            margin: 0px 30px 30px -300px;
+            padding: 50px;
+            border-radius: 20px;
+            width: 70vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+          }
+        
+          .main-menu li:hover .company-menu {
+            margin: -5px 30px 0 -20px;
+            padding: 20px;
+            border-radius: 20px;
+            width: 15vw;
+            display: block;
+            /* grid-template-columns: repeat(3, 1fr); */
+            
+          }
+          
+          .sub-menu {
+            
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+          }
+        
+          .company-menu {
+            
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+          }
+          
+          .sub-menu li {
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* padding: 50px; */
+          }
+          
+          .sub-menu li img{
+            width: 55px;
+          }
+        
+          .sub-menu .menu-texts h2{
+            font-size: 19px;
+            color: #12A833;
+            padding-left: 10px;
+          }
+        
+          .sub-menu .menu-texts p{
+            font-size: 14px;
+            margin: 8px 0 16px;
+            font-weight: lighter;
+            padding-left: 10px;
+          }
+        
+          .sub-menu li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+          }
+          
+
+        
+    
+        .header-button #signup{
+            margin-left: -150px;
+        
+        }
         
         .header-button #login{
             color: black;
@@ -1273,7 +1417,7 @@
         .header-button #signup{
             color: #fff;
             background-color: #12A833;
-            padding: 18px 25px;
+            padding: 8px 15px;
         
         }
         
