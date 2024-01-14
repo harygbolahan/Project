@@ -632,15 +632,197 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 768px) {
-    nav{
-        display: none;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #EEFDF8;
+        margin: 20px 18px 10px;
+        padding: 14px 16px;
+    }
+    
+    .logo img{
+        max-width: 127px;
+        height: auto;
+        /* width: 127px;
+        height: 30px; */
+    }
+    
+    .header-menu ul{
+        display: flex;
+        list-style-type: none;
+        /* margin: 16px; */
+        padding: 15px;
+    }
+    
+    .header-menu ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        margin: 0 16px;
+        font-weight: 600;
+        color: black;
+    }
+    
+    
+    .header-button a{
+        text-decoration: none;
+        margin: 0;
+    
+    
     }
 
+    .header #hamburger{
+        display: none;
+        margin-left: -75px;
+        
+    }
+
+    #ham:checked ~ nav{
+        display: block;
+    }
+
+    .header #ham{
+        visibility: hidden;
+    }
+
+    
+    nav {
+        /* display: block; */
+        margin-left: 1rem;
+        z-index: 1;
+        position: absolute;
+        top: 100;
+        right: 0;
+        background-color: #EEFDF8;
+      }
+      
+      .main-menu {
+        
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .main-menu li {
+        position: relative;
+      }
+      
+      .main-menu li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      
+      .main-menu li:hover .sub-menu {
+        margin: 0px 30px 30px -250px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        width: 70vw;
+        display: block;
+        
+        
+      }
+    
+      .main-menu li:hover .company-menu {
+        margin: -15px 30px 0 -50px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        width: 35vw;
+        display: block;
+        /* grid-template-columns: repeat(3, 1fr); */
+        
+      }
+      
+      .sub-menu {
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+      }
+    
+      .company-menu {
+        
+        position: absolute;
+        top: 100%;
+        right: 100;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+      }
+      
+      .sub-menu li {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: -50px;
+      }
+      
+      .sub-menu li img{
+        display: none;
+        width: 55px;
+      }
+    
+      .sub-menu .menu-texts h2{
+        
+        font-size: 19px;
+        color: #000;
+        padding-left: 10px;
+      }
+    
+      .sub-menu .menu-texts p{
+        display: none;
+        font-size: 14px;
+        margin: 8px 0 16px;
+        font-weight: lighter;
+        padding-left: 10px;
+      }
+    
+      .sub-menu li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+      }
+      
+
+    
+
+    .header-button #signup{
+        margin-left: -90px;
+    
+    }
+    
     .header-button #login{
         display: none;
+        color: black;
+        font-weight: 800;
+    
     }
-
-   
+    
+    .header-button #signup{
+        color: #fff;
+        background-color: #12A833;
+        padding: 8px 15px;
+    
+    }
+    
 
     .hero-container{
 
@@ -1241,13 +1423,15 @@
             align-items: center;
             justify-content: space-between;
             background-color: #EEFDF8;
-            margin: 20px 28px 10px;
+            margin: 20px 18px 10px;
             padding: 14px 16px;
         }
         
         .logo img{
-            width: 127px;
-            height: 30px;
+            max-width: 127px;
+            height: auto;
+            /* width: 127px;
+            height: 30px; */
         }
         
         .header-menu ul{
@@ -1268,14 +1452,14 @@
         
         .header-button a{
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0;
         
         
         }
 
         .header #hamburger{
             display: block;
-            margin-left: 250px;
+            margin-left: -75px;
             
         }
 
@@ -1284,7 +1468,7 @@
         }
 
         .header #ham{
-            visibility: hidden;
+            /* visibility: hidden; */
         }
 
         
@@ -1294,7 +1478,7 @@
             z-index: 1;
             position: absolute;
             top: 100;
-            right: 100;
+            right: 0;
             background-color: #EEFDF8;
           }
           
@@ -1319,21 +1503,21 @@
           }
           
           .main-menu li:hover .sub-menu {
-            margin: 0px 30px 30px -300px;
-            padding: 50px;
+            margin: 0px 30px 30px -250px;
+            padding: 10px 30px;
             border-radius: 20px;
             width: 70vw;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            /* display: block; */
+            
             
           }
         
           .main-menu li:hover .company-menu {
-            margin: -5px 30px 0 -20px;
-            padding: 20px;
+            margin: -15px 30px 0 -50px;
+            padding: 10px 20px;
             border-radius: 20px;
-            width: 15vw;
-            display: block;
+            width: 35vw;
+            /* display: block; */
             /* grid-template-columns: repeat(3, 1fr); */
             
           }
@@ -1356,7 +1540,7 @@
             
             position: absolute;
             top: 100%;
-            left: 0;
+            right: 100;
             background-color: #fff;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
             display: none;
@@ -1371,20 +1555,23 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            /* padding: 50px; */
+            padding: -50px;
           }
           
           .sub-menu li img{
+            display: none;
             width: 55px;
           }
         
           .sub-menu .menu-texts h2{
+            
             font-size: 19px;
-            color: #12A833;
+            color: #000;
             padding-left: 10px;
           }
         
           .sub-menu .menu-texts p{
+            display: none;
             font-size: 14px;
             margin: 8px 0 16px;
             font-weight: lighter;
@@ -1404,7 +1591,7 @@
         
     
         .header-button #signup{
-            margin-left: -150px;
+            margin-left: -90px;
         
         }
         
