@@ -139,6 +139,10 @@ nav {
     display: none;
 }
 
+.header #hamburger{
+    display: none;
+}
+
 .header-button #login{
     color: black;
     font-weight: 800;
