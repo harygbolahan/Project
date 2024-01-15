@@ -56,6 +56,14 @@
         padding: 18px 25px;
     
     }
+
+    .header #ham{
+        display: none;
+    }
+
+    .header #hamburger{
+        display: none;
+    }
     
     .hero-container{
        
@@ -631,7 +639,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
     .header{
         display: flex;
         align-items: center;
@@ -672,12 +680,12 @@
     }
 
     .header #hamburger{
-        display: none;
-        margin-left: -75px;
+        display: block;
+        margin-left: 300px;
         
     }
 
-    #ham:checked ~ nav{
+    #hamburger:checked ~ nav{
         display: block;
     }
 
@@ -687,7 +695,7 @@
 
     
     nav {
-        /* display: block; */
+        display: block;
         margin-left: 1rem;
         z-index: 1;
         position: absolute;
@@ -698,7 +706,7 @@
       
       .main-menu {
         
-        display: block;
+        display: none;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -707,9 +715,9 @@
       .main-menu li {
         position: relative;
       }
-      
+
       .main-menu li a {
-        display: block;
+        display: none;
         padding: 10px 15px;
         text-decoration: none;
         color: #333;
@@ -1463,17 +1471,18 @@
             
         }
 
-        #ham:checked ~ nav{
+        #hamburger:checked ~ .main-menu{
             display: block;
         }
 
         .header #ham{
-            /* visibility: hidden; */
+            display: block;
+            /* margin-left: 50px; */
         }
 
         
         nav {
-            /* display: block; */
+            display: block;
             margin-left: 1rem;
             z-index: 1;
             position: absolute;
@@ -1486,12 +1495,14 @@
             
             display: block;
             list-style: none;
-            margin: 0;
+            margin: 0 0;
             padding: 0;
+
           }
           
           .main-menu li {
             position: relative;
+        
           }
           
           .main-menu li a {
@@ -1500,6 +1511,7 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            
           }
           
           .main-menu li:hover .sub-menu {
@@ -1507,7 +1519,7 @@
             padding: 10px 30px;
             border-radius: 20px;
             width: 70vw;
-            /* display: block; */
+            display: block;
             
             
           }
@@ -1517,7 +1529,7 @@
             padding: 10px 20px;
             border-radius: 20px;
             width: 35vw;
-            /* display: block; */
+            display: block;
             /* grid-template-columns: repeat(3, 1fr); */
             
           }
